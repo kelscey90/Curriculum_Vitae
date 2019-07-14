@@ -120,6 +120,7 @@ section hr{
 }
 
 .banner{
+	position: relative;
 	margin: auto;
 }
 
