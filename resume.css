@@ -1,0 +1,350 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', Segoe UI;
+	font-size: 12px;
+	letter-spacing: .5px;
+	color: #fff;
+	text-decoration: none;
+	list-style: none;
+	outline: none;
+}
+
+body{
+	background: url(images/bg.jpg) no-repeat center fixed;
+	background-size: cover;
+	height: 100%
+	width: 100%;
+}
+
+@media only screen and (max-width: 660px) {
+
+	header button{
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	header button{
+		width: 300px !important;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.main-content{
+		position: absolute;
+		z-index:1;
+	}
+
+	.home_btn{
+		z-index: 2;
+		left: 0;
+		background: rgba(255,255,255,.5) !important;
+	}
+
+	header{
+		display: block !important;
+	}
+
+	header button{
+		width: 150px;
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+	.cl{
+		width: 100% !important;
+	}
+
+}
+
+h1{
+	font-size: 3em;
+	letter-spacing: 2px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+h2{
+	font-size: 2em;
+	font-weight: 500;
+}
+
+.d-flex{
+	display: flex;
+}
+
+.d-none{
+	display: none;
+}
+
+.wrap{
+	flex-wrap: wrap;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+section hr{
+	margin-bottom: 30px;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, .6);
+    margin: 20px 0px;
+}
+
+.background{
+	position: absolute;
+	background: rgba(0,0,0,.4);
+	height: 100%;
+	width: 100%;
+}
+
+.container{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+}
+
+.banner-content{
+	height: 100%;
+	position: relative;
+	padding: 20px;
+	width: 30%;
+	transition: 1s ease;
+}
+
+.banner{
+	margin: auto;
+}
+
+.home_btn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	background: rgba(0,0,0,.3);
+	border-radius: 50%;
+	padding: 10px;
+	transition: .3s;
+	opacity: 0;
+	width: 30px;
+	visibility: hidden;
+	transform: rotateY(500deg);
+}
+
+.home_btn:hover{
+	background: rgba(0,0,0,.5)
+}
+
+.banner hr{
+	width: 0px;
+	margin-bottom: 30px;
+    border: 0;
+    height: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    transition: .5s ease;
+}
+
+.banner h1{
+	width: 280px;
+}
+
+.menu{
+	display: none;
+}
+
+.active{
+	box-shadow: 0 0.125rem 0.8rem rgba(255,255,255,0.4);
+	font-weight: 700;
+}
+
+button{
+	border-radius: 3px;
+	display: flex;
+	margin: 25px auto;
+	border: 1px solid;
+	padding: 10px;
+	width: 200px;
+	background: transparent;
+	cursor: pointer;
+}
+
+button > span{
+	margin: auto;
+}
+
+button >  img{
+	width: 25px;
+}
+
+button:hover{
+	transition: .2s;
+	box-shadow: 0 0.125rem 0.8rem rgba(255,255,255,0.4);
+}
+
+.main-content{
+	height: 100%;
+	width: 100%;
+	overflow-y: auto;
+	background: #fff;
+	transition: .5s ease-out;
+	box-shadow: 0 0.125rem 0.8rem rgba(0,0,0,0.4);
+	opacity: 0;
+	transform: translateX(250px);
+}
+
+header{
+	display: none;
+	background: #212121;
+	position: sticky;
+	top: 0;
+	padding-top: 50px;
+}
+
+header ul > li{
+	margin: 0 auto;
+}
+
+header ul > li > button{
+	margin: 10px;
+}
+
+section{
+	padding: 40px 70px;
+	background: #fff;
+	margin-bottom: 50px;
+	transition: .3s ease-in;
+	opacity: 0;
+	display: none;
+}
+
+section h2, section h3, strong, label{
+	color: #333;
+	line-height: 2;
+}
+
+#about_me h2{
+	text-align: left;
+}
+
+section p{
+	color: #727272;
+	line-height: 2.4;
+	text-align: justify;
+
+}
+
+.title{
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding-top: 30px;
+}
+
+.sub{
+	font-family: Segoe UI;
+	font-weight: 300;
+	font-size: 30px;
+	letter-spacing: 1px;
+	margin-bottom: 50px;
+}
+
+strong{
+	font-weight: 500;
+	font-size: 30px;
+}
+
+table, tr, td{
+	color: #333;
+	line-height: 3;
+}
+
+.cl{
+	width: 50%;
+}
+
+.info-head{
+	vertical-align: top;
+	min-width: 120px;
+}
+
+.info-sub{
+	color: #727272;
+	width: 250px;
+}
+
+label{
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.bar-container{
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.bar-container label{
+	margin: -10px 0px;
+	font-size: 9px;
+	color: #727272;
+	font-style: italic;
+	font-weight: 300;
+}
+
+.bar{
+	display: block;
+	border: 1px solid #ddd;
+	height: 2px;
+	width: 100%;
+	color: #727272;
+	margin: 10px 0px;
+	box-shadow: 0 0.125rem 0.1rem rgba(0,0,0,0.1);
+}
+
+.bar span{
+	height: 3px;
+	float: left;
+	background: #727272;
+	width: 0%;
+	transition: 1.5s ease-out;
+	margin: 0px -1px;
+
+}
+
+.bar > label{
+	position: fixed;
+	bottom: 0;
+	background: green;
+}
+
+#education span{
+	color: #727272;
+}
+
+.educ_sub{
+	margin: 20px 0px 50px 0px;
+}
+
+.contact_container{
+	border: 1px solid #ddd; 
+	text-align: center; 
+	width: 250px;
+	padding: 100px 20px;
+	margin: 10px auto;
+}
+
+.contact_container p{
+	line-height: 1.5;
+	text-align: center;
+}
+
+.contact_container h2{
+	margin-bottom: 20px;
+}
