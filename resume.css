@@ -12,7 +12,6 @@
 
 html{
 	height: 100%;
-	width: 100%;
 }
 
 body{
@@ -22,15 +21,15 @@ body{
 	width: 100%;
 }
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 500px) {
 
 	header button{
+		width: 300px !important;
 	}
 }
 
 @media only screen and (max-width: 700px) {
 	header button{
-		width: 300px !important;
 	}
 }
 
@@ -158,10 +157,6 @@ section hr{
 
 .banner h1{
 	width: 280px;
-}
-
-.menu{
-	display: none;
 }
 
 .active{
