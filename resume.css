@@ -8,6 +8,7 @@
 	text-decoration: none;
 	list-style: none;
 	outline: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 html, body{
@@ -84,14 +85,6 @@ body{
 		width: 100% !important;
 	}
 
-}
-
-input,
-textarea,
-button,
-select,
-a {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 h1{
