@@ -19,7 +19,7 @@ const tablet = window.matchMedia("(max-width: 1000px)")
 cv_btn.addEventListener("click", function(){
 	cv_btn.style.display = "none";
 	home_btn.style.animationName = "fadeIn";
-	document.querySelector('.banner-content hr').style.width = "350px";
+	document.querySelector('.banner-content hr').style.width = "100%";
 	setTimeout('main_content.style.opacity = "1";', 50)
 	setTimeout('main_content.style.transform = "translateX(0px)";', 50)
 	main_content.style.display = "block";
@@ -137,3 +137,8 @@ const btns = menu.getElementsByClassName("btn");
 	  this.className += " active";
 	  });
 	}
+
+window.addEventListener("load", function(){
+	const loader = document.querySelector(".loader");
+	loader.className += " hidden";
+});
