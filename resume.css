@@ -272,9 +272,8 @@ section h2, section h3, strong, label{
 
 section p{
 	color: #727272;
-	line-height: 2.4;
+	line-height: 3;
 	text-align: justify;
-
 }
 
 .title{
@@ -363,6 +362,10 @@ label{
 
 #education span{
 	color: #727272;
+}
+
+.educ_address{
+	line-height: 1.5;
 }
 
 .educ_sub{
