@@ -25,20 +25,16 @@ body{
 		width: 100% !important;
 	}
 
-	.banner_bg{
-		transform: translateX(-500px) !important;
-	}
-
-	.move{
-		transform: translateX(0px) !important;
-	}
-
-	.menu_btn{
-		right: -10% !important;
+	button{
+		width: 100% !important;
 	}
 
 	.move_right{
 		right: 0% !important;
+	}
+
+	.banner h1{
+		width: 100% !important;
 	}
 }
 
@@ -65,7 +61,7 @@ body{
 	.banner_bg{
 		background: #333 !important;
 		box-shadow: 0 0.125rem 1rem rgba(0,0,0,1);
-		transform: translateX(-390px);
+		transform: translateX(-100%);
 	}
 
 	.move{
@@ -153,7 +149,7 @@ section hr{
 
 .menu_btn{
 	position: absolute;
-	right: -12.9%;
+	right: -50px;
 	top: 0;
 	cursor: pointer;
 	background: #333;
