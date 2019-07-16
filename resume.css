@@ -345,21 +345,26 @@ label{
 .bar{
 	display: block;
 	border: 1px solid #ddd;
-	height: 2px;
+	height: 5px;
 	width: 100%;
 	color: #727272;
 	margin: 10px 0px;
-	box-shadow: 0 0.125rem 0.1rem rgba(0,0,0,0.1);
 }
 
 .bar span{
-	height: 3px;
+	position: relative;
+	height: 5px;
 	float: left;
 	background: #727272;
 	width: 0%;
 	transition: 1.5s ease-out;
 	margin: 0px -1px;
+}
 
+.bar span p{
+	position: absolute;
+	right: 0;
+	top: -30px;
 }
 
 .bar > label{
