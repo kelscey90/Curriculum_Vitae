@@ -448,6 +448,6 @@ label{
 
 .loader label{
 	position: absolute;
-	top: 55%;
+	top: 50%;
 	animation: loading 3s infinite;
 }
