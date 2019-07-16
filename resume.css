@@ -286,7 +286,7 @@ section p{
 }
 
 .sub{
-	font-family: Segoe UI;
+	font-family: inherit;
 	font-weight: 300;
 	font-size: 30px;
 	letter-spacing: 1px;
