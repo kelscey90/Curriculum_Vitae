@@ -39,7 +39,6 @@ html, body{
 
 	.home_btn{
 		left: 0;
-		background: transparent !important;
 	}
 
 	.banner-content{
@@ -47,8 +46,31 @@ html, body{
 		z-index: 2;
 	}
 
+	.banner_bg h1, .banner_bg button, .banner_bg button span{
+		color: #222;
+		font-weight: 700;
+	}
+
+	.banner_bg button:hover{
+		transition: .2s;
+		box-shadow: 0 0.125rem 1rem rgba(0,0,0,.5) !important;
+	}
+
+	button{
+		height: 50px;
+	}
+
+	button > img{
+		display: none;
+	}
+
+
+	.banner_bg .active{
+		box-shadow: 0 0.125rem 1rem rgba(0,0,0,.5);
+	}
+
 	.banner_bg{
-		background-color: #333 !important;
+		background-color: #fff !important;
 		box-shadow: 0 0.125rem 1rem rgba(0,0,0,1);
 		transform: translateX(-100%);
 	}
@@ -73,7 +95,7 @@ html, body{
 
 	.move_right{
 		right: 0% !important;
-		background: transparent !important;
+		border: none !important;
 	}
 
 	.banner h1{
@@ -157,19 +179,21 @@ h2{
 
 .menu_btn{
 	position: absolute;
-	right: -50px;
-	top: 0;
+	right: -51px;
+	top: -1px;
 	cursor: pointer;
-	background: #333;
-	border-radius: 0% 0% 100% 0%;
+	background: #fff;
+	border-radius: 0% 0% 50% 0%;
 	padding: 10px;
 	width: 30px;
 	transition: .5s ease-out;
 	display: none;
+	border: 1px solid #222;
+	border-left: none;
 }
 
 .menu_btn:hover{
-	border-radius: 0% 0% 50% 0%;
+	border-radius: 0% 0% 25% 0%;
 }
 
 .home_btn{
