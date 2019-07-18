@@ -12,18 +12,20 @@ const education_me = document.querySelector('#education');
 const contact_me = document.querySelector('#contact');
 
 const main_content = document.querySelector('.main-content')
-
-const mobile = window.matchMedia("(max-width: 800px)")
-const tablet = window.matchMedia("(max-width: 1000px)")
+const menu = document.querySelector(".menu");
 
 cv_btn.addEventListener("click", function(){
 	cv_btn.style.display = "none";
 	home_btn.style.animationName = "fadeIn";
+	document.querySelector('.banner-content h1').innerHTML = "Curriculum Vitae";
+	document.querySelector('.banner-content h1').style.textAlign = "center";
+	document.querySelector('.banner-content h1').style.fontSize = "2.5em";
+	document.querySelector('.banner-content h2').style.display = "none";
 	document.querySelector('.banner-content hr').style.width = "100%";
 	setTimeout('main_content.style.opacity = "1";', 50)
 	setTimeout('main_content.style.transform = "translateX(0px)";', 50)
 	main_content.style.display = "block";
-	document.querySelector('.menu').style.display = "block";
+	menu.style.display = "block";
 	if (about.classList.contains('active')) {
 		about_me.style.display = "block";
 		about_me.style.opacity = "1";
@@ -38,10 +40,14 @@ home_btn.addEventListener("click", function(){
 	cv_btn.style.display = "flex";
 	home_btn.style.animationName = "fadeOut";
 	document.querySelector('.banner-content hr').style.width = "";
+	document.querySelector('.banner-content h1').innerHTML = "Kelscey A. Ortiz";
+	document.querySelector('.banner-content h1').style.textAlign = "";
+	document.querySelector('.banner-content h1').style.fontSize = "";
+	document.querySelector('.banner-content h2').style.display = "";
 	setTimeout('main_content.style.display = "";', 400)
 	main_content.style.opacity = "";
 	main_content.style.transform ="";
-	document.querySelector('.menu').style.display = "";
+	menu.style.display = "";
 	document.querySelector('.banner-content').style.background = "";
 	main_content.style.filter = "";
 	document.querySelector('.banner-content').classList.remove('banner_bg');
@@ -128,7 +134,7 @@ contact.addEventListener("click", function(){
 	bars_reset();
 });
 
-const menu = document.querySelector(".menu");
+
 const btns = menu.getElementsByClassName("btn");
 	for (let i = 0; i < btns.length; i++) {
 	  btns[i].addEventListener("click", function() {
