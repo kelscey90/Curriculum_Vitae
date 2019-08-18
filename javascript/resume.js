@@ -69,7 +69,7 @@ menu_btn.addEventListener("click", function(){
 function bars_move(){
 	document.querySelector('.html').style.width = "90%";
 	document.querySelector('.css').style.width = "80%";
-	document.querySelector('.javascript').style.width = "30%";
+	document.querySelector('.javascript').style.width = "70%";
 	document.querySelector('.php').style.width = "50%";
 	document.querySelector('.microsoft').style.width = "75%";
 };
